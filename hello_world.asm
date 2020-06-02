@@ -43,7 +43,7 @@ main:
         hlt
 
 print_string:
-        push edp
+        push ebp
         mov ebx, dword[ebp -8]
         mov ecx, 0
 

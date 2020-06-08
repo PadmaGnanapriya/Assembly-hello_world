@@ -61,7 +61,7 @@ print_string:
 
 .exit:
         pop ebp
-        ret                       
+        ret                        
 
 ;kernal end
         times (1022 - ($ - $$)) db 0x00
@@ -73,4 +73,4 @@ section .rodata
         _HEAP_ dd 0x00008C24
 
 section .data
-        msg db 'Hello World', 0        
+        msg db 'Hello World version 01', 0        
